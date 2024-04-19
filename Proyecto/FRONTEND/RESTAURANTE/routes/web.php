@@ -32,3 +32,19 @@ Route::get('/menu', function(){
 Route::get('/registro', function(){
     return view('registro');
 });
+
+Route::get('/administrador', function(){
+    return view('administrador');
+});
+
+Route::get('/administrador/inventario', function(){
+    return view('inventario');
+});
+
+Route::get('/administrador/ordenes', function(){
+    return view('ordenes');
+});
+
+Route::get('/administrador/facturacion', function(){
+    return view('facturacion');
+});

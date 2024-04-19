@@ -6,7 +6,7 @@
     <!--IMPORT-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" type="text/css" href="./style1.css" >
 
     <title>RESTAURANTE</title>
 </head>
@@ -15,46 +15,41 @@
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
         <a class="navbar-brand" href="#">Restaurante</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Menu</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Registrarse</a>
+                    <a class="nav-link" href="#">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Iniciar Sesion</a>
+                    <a class="nav-link" href="#">Iniciar Sesión</a>
                 </li>
             </ul>
         </div>
-      </nav>
+    </nav>
       
 
     <!--CAROUSEL-->
-        <div id="carousel-control" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="./img/Designer.jpeg" alt="First slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+1" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./" alt="Second slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+2" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./" alt="Third slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+3" alt="Third slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carousel-control" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Anterior</span>
             </a>
-            <a class="carousel-control-next" href="#carousel-control" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>
         </div>
 

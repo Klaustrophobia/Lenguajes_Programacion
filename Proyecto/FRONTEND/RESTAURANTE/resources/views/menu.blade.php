@@ -14,13 +14,19 @@
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Restaurante</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+        <div class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">ORDENES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="perfilDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="ruta_a_la_foto_de_perfil.jpg" alt="Foto de perfil" class="rounded-circle" width="30" height="30">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="perfilDropdown">
+                        <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                        <a class="dropdown-item" href="#">Ajustes</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -116,7 +122,67 @@
             <!-- Más tarjetas de platillos aquí -->
         </div>
     </div>
-    
+
+    <!-- BEBIDAS -->
+    <div class="container mt-5">
+        <h2>BEBIDAS</h2>
+        <div class="row">
+            <!-- Bebidas 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Bebidas 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bebida 1</h5>
+                        <p class="card-text">Precio: $10</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#bebidas1Modal">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bebidas 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Bebidas 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bebida 2</h5>
+                        <p class="card-text">Precio: $12</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#bebidas2Modal">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Más tarjetas de platillos aquí -->
+        </div>
+    </div>
+
+    <!-- ALCOHOL -->
+    <div class="container mt-5">
+        <h2>BEBIDAS ALCOHOLICAS</h2>
+        <div class="row">
+            <!-- ALCOHOL 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="alcohol 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bebida alcoholica 1</h5>
+                        <p class="card-text">Precio: $10</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#alcohol1Modal">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bebidas 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="alcohol 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bebida alcoholica 2</h5>
+                        <p class="card-text">Precio: $12</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#alcohol2Modal">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Más tarjetas de platillos aquí -->
+        </div>
+    </div>
+
 
     <!-- MODALES PLATILLOS -->
     <!-- ENTRADAS -->
@@ -259,6 +325,123 @@
             </div>
         </div>
     </div>
+
+    <!-- BEBIDAS -->
+    <!-- Bebidas 1 -->
+    <div class="modal fade" id="bebidas1Modal" tabindex="-1" role="dialog" aria-labelledby="bebidas1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bebidas1ModalLabel">Detalles de Bebida 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/250" class="img-fluid" alt="Bebida 1">
+                    <p>Descripción del Bebida 1.</p>
+                    <p>Precio: $10</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Ordenar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bebidas 2 -->
+    <div class="modal fade" id="bebidas2Modal" tabindex="-1" role="dialog" aria-labelledby="bebidas2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bebidas2ModalLabel">Detalles de Bebida 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/250" class="img-fluid" alt="Bebida 2">
+                    <p>Descripción del Bebida 2.</p>
+                    <p>Precio: $12</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Ordenar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEBIDAS ALCOHOLICAS -->
+    <!-- Alcohol 1 -->
+    <div class="modal fade" id="alcohol1Modal" tabindex="-1" role="dialog" aria-labelledby="alcohol1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alcohol1ModalLabel">Detalles de bebida alcoholica 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/250" class="img-fluid" alt="Bebida alcoholica 1">
+                    <p>Descripción del Bebida Alcoholica 1.</p>
+                    <p>Precio: $10</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Ordenar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bebidas 2 -->
+    <div class="modal fade" id="alcohol2Modal" tabindex="-1" role="dialog" aria-labelledby="alcohol2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alcohol2ModalLabel">Detalles de Bebida Alcoholica 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/250" class="img-fluid" alt="Bebida alcoholica 2">
+                    <p>Descripción del Bebida alcoholico 2.</p>
+                    <p>Precio: $12</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Ordenar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE ORDENES -->
+    <div class="modal fade" id="ordenesModal" tabindex="-1" role="dialog" aria-labelledby="ordenesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ordenesModalLabel">Órdenes del Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="ordenesModalBody">
+                    <!-- Aquí se mostrarán las órdenes del usuario -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
 
 
     <!--SCRIPTS-->
