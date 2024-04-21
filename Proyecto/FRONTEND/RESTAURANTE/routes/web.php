@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use GuzzleHttp\Client;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,13 +13,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+Route::get('/', function(){
     return view('welcome');
 });
 
-Route::get('/Landingpage', function () {
-    return view('Landingpage');
+Route::get('/landingpage', function () {
+    return view('landingpage');
 });
 
 Route::get('/login', function(){

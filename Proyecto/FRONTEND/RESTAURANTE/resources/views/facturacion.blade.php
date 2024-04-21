@@ -20,6 +20,7 @@
                     <th>Id Factura</th>
                     <th>Nombre del Cliente</th>
                     <th>Fecha Emitida</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,6 +29,9 @@
                     <td>1</td>
                     <td>Juan Pérez</td>
                     <td>2024-04-12</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">Facturación Finalizada</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -46,6 +50,9 @@
                 <!-- Aquí se cargarán el historial de facturas -->
             </tbody>
         </table>
+
+        <!-- Botón para generar factura -->
+        <button class="btn btn-success mb-4">Generar Factura</button>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
