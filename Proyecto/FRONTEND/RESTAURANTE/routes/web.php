@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegistroController;
 use GuzzleHttp\Client;
 
 /*
@@ -17,34 +18,13 @@ Route::get('/', function(){
     return view('welcome');
 });
 
-Route::get('/landingpage', function () {
+Route::get('/landingpage', function(){
     return view('landingpage');
 });
 
-Route::get('/login', function(){
-    return view('login');
-});
 
-Route::get('/menu', function(){
-    return view('menu');
-});
 
-Route::get('/registro', function(){
-    return view('registro');
-});
 
-Route::get('/administrador', function(){
-    return view('administrador');
-});
-
-Route::get('/administrador/inventario', function(){
-    return view('inventario');
-});
-
-Route::get('/administrador/ordenes', function(){
-    return view('ordenes');
-});
-
-Route::get('/administrador/facturacion', function(){
-    return view('facturacion');
-});
+/* CONSUMO DE API */
+Route::get('/registro', [RegistroController::class, 'formularioRegistro'])->name('registro');
+Route::post('/registro', [RegistroController::class, 'registrarUsuario'])->name('registrar-usuario');
