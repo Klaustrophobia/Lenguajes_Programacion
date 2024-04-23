@@ -1,0 +1,27 @@
+Database Port: 3306
+Backend Port: 8093
+Frontend Port: 8000
+
+php artisan serve
+
+NUEVA BASE DE DATOS:
+CREATE DATABASE DUMMY;
+
+USE DUMMY;
+
+CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(30),
+    apellido VARCHAR(30),
+    identidad VARCHAR(30),
+    correo VARCHAR(50),
+    contrasenia VARCHAR(30)
+);
+
+CREATE TABLE administradores (
+    idadministrador INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(30),
+    apellido VARCHAR(30),
+    correo VARCHAR(50),
+    contrasenia VARCHAR(30)
+);
