@@ -6,6 +6,6 @@ public interface AdministradorService {
 
     public Administrador crearAdmnistrador(Administrador admnistrador);
 
-    public Administrador buscarAdmnistrador(long idAdmnistrador);
+    public Administrador autenticarAdmin(String correo, String contrasenia);
 
 }

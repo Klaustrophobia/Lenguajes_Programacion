@@ -19,9 +19,15 @@ public class AdministradorServiceImpl implements AdministradorService {
     }
 
     @Override
-    public Administrador buscarAdmnistrador(long idAdmnistrador) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarAdmnistrador'");
-    }
+    public Administrador autenticarAdmin(String correo, String contrasenia) {
+        
+        Administrador administrador = administradorRepository.findByCorreo(correo);
 
+        if (administrador != null && contrasenia.equals(administrador.getContrasenia())){
+            return administrador;
+        }else{
+            return null;
+        }
+
+    }
 }

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MODELO DB RESTAURANTE" id="78766939-E311-6AF7-78C3-DE72B350347E" version="3.5">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 21:52:33 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>78766939-E311-6AF7-78C3-DE72B350347E</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="18C024AC-DC34-588C-302F-C5BDB9B9AA38">
+<designStoragePath>C:\Users\Lalos\Desktop\IS - CODE BRACH\LENGUAJES - Harold\Proyecto_Lenguajes\DATABASE\RESTAURANTE</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

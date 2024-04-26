@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/Registro.jpeg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-start;
+}
+
+.custom-navbar {
+    background-color: #dc143c; /* Cambia el valor de alfa para ajustar la opacidad */
+    width: 100%;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.container {
+    background-color: rgba(255, 0, 63, 0.6); /* Cambia el valor de alfa para ajustar la opacidad */
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 800px; /* Aumenta el ancho máximo del container */
+    width: 90%;
+}
+
+.btn-custom {
+    background-color: #ff4500; /* Cambia el color de fondo del botón */
+    border-color: #ff4500; /* Cambia el color del borde del botón */
+    color: #ffffff; /* Cambia el color del texto del botón */
+}
+
+.btn-custom:hover {
+    background-color: #ff6347; /* Cambia el color de fondo del botón al pasar el mouse */
+    border-color: #ff6347; /* Cambia el color del borde del botón al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto del botón al pasar el mouse */
+}

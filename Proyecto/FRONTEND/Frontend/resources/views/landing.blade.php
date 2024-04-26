@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--IMPORT-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="./style1.css" >
-    <link href="{{ asset('../css/style') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/styleLanding.css') }}">
 
     <title>RESTAURANTE</title>
 </head>
 <body>
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-        <a class="navbar-brand" href="{{ route('landing') }}">Restaurante</a>
+        <a class="navbar-brand" href="{{ route('landing') }}">TARTARO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,6 +26,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('loginAdmin') }}">Administracion</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -35,13 +38,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+1" alt="First slide">
+                    <img class="d-block w-100" src="{{ asset('img/carrusel.png') }}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+2" alt="Second slide">
+                    <img class="d-block w-100" src="{{ asset('img/carrusel2.png') }}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+3" alt="Third slide">
+                    <img class="d-block w-100" src="{{ asset('img/carrusel3.png') }}" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -62,7 +65,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img src="./" class="img-fluid" alt="Imagen de Registro">
+                                <img src="{{ asset('img/Signup.jpeg') }}" class="img-fluid" alt="Imagen de Registro">
                             </div>
                             <div class="col-sm-8">
                                 <h5 class="card-title">Registrarse</h5>
@@ -78,7 +81,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img src="./img/Login.jpeg" class="img-fluid" alt="Imagen de Inicio de Sesión">
+                                <img src="{{ asset('img/Login.jpeg') }}" class="img-fluid" alt="Imagen de Inicio de Sesión">
                             </div>
                             <div class="col-sm-8">
                                 <h5 class="card-title">Iniciar Sesión</h5>
@@ -97,7 +100,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="./img/Logo.jpeg" class="footer-logo" alt="Logo del restaurante">
+
                 </div>
                 <div class="col-md-6 text-right">
                     <a href="#" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></a>

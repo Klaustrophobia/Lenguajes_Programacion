@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(220, 20, 60, 0.6);
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+#btn-accept {
+    background-color: #98fb98;
+    color: white;
+}
+
+#btn-reject {
+    background-color: #ff0800;
+    color: white;
+}

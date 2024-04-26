@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../img/Login1.jpeg');
+    background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
+}
+
+/*Estilos personalizados para el Header/Navbar*/
+.custom-navbar {
+    background-color: #dc143c; /* Cambia el color de fondo de la barra de navegación */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #ffffff; /* Cambia el color del texto de los enlaces */
+}
+
+.custom-card {
+    border: 1px solid #ff4500;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-card img {
+    border-radius: 10px 0 0 10px;
+}
+
+.custom-card-2 {
+    border: 1px solid #ff4500;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ff4500;
+}
+
+.custom-card-2 img {
+    border-radius: 10px 0 0 10px;
+}
+
+/* Cambiar el color del botón a azul marino */
+.btn-primary {
+    background-color: #001f3f;
+    border-color: #001f3f;
+}
+
+/* Cambiar el color del botón hover a azul oscuro */
+.btn-primary:hover {
+    background-color: #001220 !important;
+    border-color: #001220 !important;
+}
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para el contenedor del formulario */
+.login-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #c1eafe; /* Color de fondo azul */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

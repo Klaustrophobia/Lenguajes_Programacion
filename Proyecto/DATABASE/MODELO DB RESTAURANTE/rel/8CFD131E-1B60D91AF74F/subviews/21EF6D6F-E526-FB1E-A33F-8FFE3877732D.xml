@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1(2)" id="21EF6D6F-E526-FB1E-A33F-8FFE3877732D">
+<createdBy>Lalos</createdBy>
+<modifiedBy>Lalos</modifiedBy>
+<createdTime>2024-04-23 21:54:22 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0A9E81B1-5374-760E-D247-D29155FDC966" otype="Table" vid="C56D9315-9898-4CFC-0078-7899B74B98F5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="710" y="136" width="230" height="151"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="1EE16E6A-AAF6-09DF-C8C3-2F5B7816B7A0" otype="Note" vid="C1BCF837-F517-92F9-94B0-0C7C618E666C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1568" y="292" width="180" height="57"/>
+<comment>Un administrador puede comprar a varios proveedores
+1:M</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4E59EAC8-FD5F-F6CB-A1E2-70CC109B67EE" otype="Table" vid="BE3033CF-62EA-9418-FF7B-C2D55D248E18">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="660" y="666" width="233" height="116"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="539EFADA-F403-6E3D-67FB-04FF138D4076" otype="Table" vid="6F5381BD-6509-B71E-B082-84F9C3E28FDA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="324" y="422" width="214" height="95"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="6715258B-C1A5-D463-2E0E-0AD616041EAD" otype="Note" vid="6D29F43D-264D-03BA-3F50-F06A78FE87E2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1390" y="679" width="108" height="85"/>
+<comment>Un producto tiene un espacio en el inventario
+1:1
+</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="7C7046E1-02DD-F2D1-0A5E-86F0BFB41765" otype="Note" vid="25E994BF-D0EA-C3CA-6783-D6B60D160B46">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="956" y="701" width="118" height="70"/>
+<comment>Una comida puede consumir varios productos
+1:M</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8787504F-1957-DC38-5C40-30F6A37C100A" otype="Table" vid="45B83B51-535E-9177-4D69-79D42E835DA2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="726" y="418" width="222" height="112"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="92CC4B6F-4B2D-C597-4EEB-E36F1E2A3321" otype="Note" vid="3343853A-6D19-C18C-C064-61D418326418">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="730" y="569" width="141" height="56"/>
+<comment>Una orden puede tener varias comidas
+1:M</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="93D069EF-9294-A29F-EDD4-F1C37CE26EE4" otype="Table" vid="5AE37121-D0F5-64D0-E9D6-9EA3821D38CD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1102" y="662" width="250" height="128"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="9DED7791-33FA-0A83-FBA0-71FA310BE2DB" otype="Note" vid="0DBA8D3F-94B2-F56C-8F87-71ACF4507E9E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="585" y="430" width="108" height="77"/>
+<comment>Varias ordenes pueden estar dentro de una factura
+1:M</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B5CD6A08-11FA-DB60-E24C-CC47B33A9CD1" otype="Table" vid="57A69021-A076-2FD4-5094-D000CB20FDAE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1539" y="668" width="231" height="134"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B642AA4F-377F-518C-B443-BF7EAB7E5C9B" otype="Table" vid="4B42413C-1FAE-D63C-5CD8-FC3544273DB7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1475" y="378" width="267" height="159"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="BA2D5EBF-D16E-B990-60A9-34D8116214E6" otype="Note" vid="902B1F3C-BB35-70DA-2914-D8591A14AD2E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="781" y="322" width="126" height="55"/>
+<comment>Un cliente puede hacer varias ordenes
+1:M</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E3BC7E1A-5907-8A5B-859A-6E21F3C6ACC9" otype="Note" vid="5C8B4C70-DAB1-A8BD-9DE4-33B4DD47C20C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1593" y="564" width="162" height="77"/>
+<comment>Un administrador puede rebastecer varios inventarios
+1:M</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F6864560-C969-84FF-8DE2-4511A6335451" otype="Table" vid="2677D143-D91A-BAE7-93E2-0B0949FBD351">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1492" y="142" width="260" height="133"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="152BFA3A-A725-73B1-B588-E7CA544431DE" otype="FKIndexAssociation" vid_source="C56D9315-9898-4CFC-0078-7899B74B98F5" vid_target="45B83B51-535E-9177-4D69-79D42E835DA2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="848" y="287"/>
+<point x="848" y="418"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="16799693-42A8-7154-C812-9D012EE6EF1F" otype="FKIndexAssociation" vid_source="BE3033CF-62EA-9418-FF7B-C2D55D248E18" vid_target="5AE37121-D0F5-64D0-E9D6-9EA3821D38CD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="893" y="739"/>
+<point x="1102" y="739"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="168BB8D8-6634-DD32-A45B-822A751AFA0D" otype="FKIndexAssociation" vid_source="5AE37121-D0F5-64D0-E9D6-9EA3821D38CD" vid_target="57A69021-A076-2FD4-5094-D000CB20FDAE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1352" y="729"/>
+<point x="1539" y="729"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2F607096-D772-23D0-FA76-2474C4735C2C" otype="FKIndexAssociation" vid_source="4B42413C-1FAE-D63C-5CD8-FC3544273DB7" vid_target="2677D143-D91A-BAE7-93E2-0B0949FBD351">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1602" y="378"/>
+<point x="1602" y="275"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4FAE1560-29AF-12BE-905A-28F04C917745" otype="FKIndexAssociation" vid_source="6F5381BD-6509-B71E-B082-84F9C3E28FDA" vid_target="45B83B51-535E-9177-4D69-79D42E835DA2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="538" y="439"/>
+<point x="726" y="439"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="52768CB9-C8E8-4BF3-92DA-077FEFA215D7" otype="FKIndexAssociation" vid_source="4B42413C-1FAE-D63C-5CD8-FC3544273DB7" vid_target="57A69021-A076-2FD4-5094-D000CB20FDAE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1625" y="537"/>
+<point x="1625" y="668"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FA58C654-CAEF-578E-EF68-BC41F5BC25E7" otype="FKIndexAssociation" vid_source="45B83B51-535E-9177-4D69-79D42E835DA2" vid_target="BE3033CF-62EA-9418-FF7B-C2D55D248E18">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="794" y="530"/>
+<point x="794" y="666"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

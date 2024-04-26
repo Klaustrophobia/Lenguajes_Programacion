@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8787504F-1957-DC38-5C40-30F6A37C100A" name="Orden">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 21:54:22 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<importedID>40F72331-7D53-58C5-41FF-8EBF3C93EEFD</importedID>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idOrden" id="1A046FDD-4F69-4323-289A-6003C35C3CA0">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:10:40 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idCliente" id="46AC4568-6583-9EA5-7F90-ABDD81D1F094">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:42:37 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="152BFA3A-A725-73B1-B588-E7CA544431DE" referredColumn="227F654D-7124-6CE0-AD9B-326E77A1CAFE"/>
+</associations>
+</Column>
+<Column name="fecha" id="9AB23F29-AEA5-2B24-E886-AB0CE4204A4A">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:10:52 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="8F24A9C2-8529-BB6E-50AF-CD42DABE6231">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:11:16 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Factura_idFactura" id="17DEFB0E-21FF-2E50-66C8-05428C50332A">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:44:26 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4FAE1560-29AF-12BE-905A-28F04C917745" referredColumn="53A66B2B-FEFD-F9B0-118B-32831ECE2A6D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7087383E-BB88-3C98-F2C4-84203DC417FC" name="TBL_ORDENES_PK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 21:54:22 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<importedID>EFD109F0-9FB0-A05C-1837-D945A29B5E50</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A046FDD-4F69-4323-289A-6003C35C3CA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB462554-F267-AF84-2585-34908DA99542" name="Orden_Clientes_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:42:37 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46AC4568-6583-9EA5-7F90-ABDD81D1F094"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88AE763D-1FA8-F198-AAA5-8B7C5316074E" name="Orden_Factura_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:44:26 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17DEFB0E-21FF-2E50-66C8-05428C50332A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

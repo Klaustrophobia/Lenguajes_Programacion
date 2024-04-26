@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Http;
+
 
 class RegistroController extends Controller
 {
@@ -13,33 +16,23 @@ class RegistroController extends Controller
 
     public function registrarUsuario(Request $request)
     {
-        $client = new Client([
-            'base_uri' => 'http://localhost:8094/api/', // Reemplaza con la URL de tu backend Spring Boot
-        ]);
+        $client = new Client(['base_uri' => 'http://localhost:8094/api/']);
 
         try {
             $response = $client->post('cliente/crear', [
-                'json' => [
-                    'nombre' => $request->input('nombre'),
-                    'apellido' => $request->input('apellido'),
-                    'identidad' => $request->input('identidad'),
-                    'correo' => $request->input('correo'),
-                    'contrasenia' => $request->input('contrasenia'),
-                ]
+                'json' => $request->all(),
             ]);
 
-            // Verificar si el registro fue exitoso (puedes ajustar esta condición según la respuesta de tu backend)
-            if ($response->getStatusCode() == 200) {
-                // Almacena un mensaje de éxito en la sesión
-                return redirect()->route('landing')->with('success', '¡Usuario registrado exitosamente!');
-            }
-
-            // Si el registro no fue exitoso, redirige de vuelta con un mensaje de error
-            return redirect()->back()->with('error', 'Ocurrió un error durante el registro.');
-
+            // Muestra el mensaje emergente y redirige a la vista de inicio de sesión
+            return redirect()->route('login')->with('success', 'Usuario registrado exitosamente.');
         } catch (\Exception $e) {
-            // Manejar cualquier error que ocurra durante la solicitud
-            return redirect()->back()->with('error', $e->getMessage());
+            // Si hay un error, redirige de nuevo al formulario de registro con un mensaje de error
+            return redirect()->back()->with('error', 'Error al registrar usuario: ' . $e->getMessage())->withInput();
         }
     }
 }
+
+
+
+
+

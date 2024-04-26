@@ -5,22 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--IMPORTS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-
-        .custom-navbar {
-            background-color: #006994; /* Cambia el color de fondo de la barra de navegación */
-        }
-
-        .custom-navbar .navbar-nav .nav-link {
-            color: #ffffff; /* Cambia el color del texto de los enlaces */
-        }
-
-    </style>
+    <link rel="stylesheet" href ="{{ asset('css\styleRegister.css' )}}">
 
     <title>Registro</title>
 </head>
@@ -28,7 +13,7 @@
 
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-        <a class="navbar-brand" href="{{ route('landing') }}">Restaurante</a>
+        <a class="navbar-brand" href="{{ route('landing') }}">TARTARO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -88,7 +73,7 @@
                                 <label for="contrasenia">Contraseña</label>
                                 <input type="password" class="form-control" id="contrasenia" name="contrasenia" placeholder="Ingrese su contraseña">
                             </div>
-                            <button type="submit" class="btn btn-primary">Registrarse</button>
+                            <button type="submit" class="btn btn-custom">Registrarse</button>
                         </form>
                     </div>
                 </div>

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6864560-C969-84FF-8DE2-4511A6335451" name="Proveedor">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 21:54:22 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<importedID>7F7C593B-05AF-83BD-D809-2AE9C1D6C31C</importedID>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idProveedor" id="EFD2E5A1-A2B7-628F-8894-B81C7E4BC01A">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:08:01 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="F703C8CA-B446-F496-A5C0-E2A03AE667DB">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:08:01 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="ADED55F0-17BA-87C8-A726-D43123F4B2F0">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:08:01 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="5756E9DA-65FE-D5B3-A667-334EB2E56AF7">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:08:20 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idAdministrador" id="662BB00D-802A-C727-2BF2-4D7D2648DB8F">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:49:01 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F607096-D772-23D0-FA76-2474C4735C2C" referredColumn="60E7CBA4-EFF4-4F3C-0D60-F38E36B40F22"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CFE5AB8-9CC6-AE03-27E5-1BD2C96174B1" name="TBL_PROVEEDORES_PK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 21:54:22 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<importedID>90750D74-70F1-8FF8-0FCC-277F28377B4A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD2E5A1-A2B7-628F-8894-B81C7E4BC01A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97062308-4808-C020-57D9-A99FD2BEA281" name="Proveedor_Administrador_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:49:01 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="662BB00D-802A-C727-2BF2-4D7D2648DB8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

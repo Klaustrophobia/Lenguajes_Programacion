@@ -51,4 +51,6 @@ class LoginController extends Controller
             return response()->json(['error' => 'Error en la comunicación con el servidor'], 500);
         }
     }
+
 }
+

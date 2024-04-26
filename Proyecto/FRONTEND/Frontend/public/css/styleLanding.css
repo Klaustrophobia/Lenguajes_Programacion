@@ -3,9 +3,13 @@
     margin: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 /*Estilos personalizados para el Header/Navbar*/
 .custom-navbar {
-    background-color: #006994; /* Cambia el color de fondo de la barra de navegación */
+    background-color: #dc143c ; /* Cambia el color de fondo de la barra de navegación */
 }
 
 .custom-navbar .navbar-nav .nav-link {
@@ -30,7 +34,7 @@
 
 /* Estilos personalizados para el footer */
 .footer {
-    background-color:#006994; /* Color de fondo del footer */
+    background-color: #dc143c ; /* Color de fondo del footer */
     color: #ffffff; /* Color del texto del footer */
     padding: 10px 20px; /* Espaciado interno del footer */
 }
@@ -44,6 +48,6 @@
 /* Cambia el color de fondo de los íconos a blanco */
 .btn-twitter, .btn-facebook, .btn-instagram {
     background-color: #ffffff;
-    color: #4682B4; /* Cambia el color del texto a azul */
+    color: #ff003f ; /* Cambia el color del texto a azul */
     margin-right: 10px; /* Agrega margen a la derecha de los íconos */
 }

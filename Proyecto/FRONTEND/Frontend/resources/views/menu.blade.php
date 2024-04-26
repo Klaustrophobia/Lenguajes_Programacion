@@ -6,33 +6,51 @@
 
     <!--IMPORT-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/styleMenu.css') }}">
 
     <title>Menu</title>
 </head>
 <body>
 
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Restaurante</a>
-        <div class="navbar-nav ml-auto">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ORDENES</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="perfilDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="ruta_a_la_foto_de_perfil.jpg" alt="Foto de perfil" class="rounded-circle" width="30" height="30">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="perfilDropdown">
-                        <a class="dropdown-item" href="#">Cerrar Sesión</a>
-                        <a class="dropdown-item" href="#">Ajustes</a>
-                    </div>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ asset('menu') }}">TARTARO</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalCliente">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ordenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ asset('landing') }}">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!--MENU-->
+    <!-- Profile Modal -->
+    <div class="modal fade" id="modalCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Perfil del Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nombre: Cliente</p>
+                    <p>Correo: admin@example.com</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--ENTRADA-->
     <div class="container mt-5">
         <h2>ENTRADAS</h2>

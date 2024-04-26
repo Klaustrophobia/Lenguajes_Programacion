@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="168BB8D8-6634-DD32-A45B-822A751AFA0D" containerWithKeyObject="B5CD6A08-11FA-DB60-E24C-CC47B33A9CD1" localFKIndex="00ED4768-7396-094F-4274-E4E01450DF40" name="Inventario_Producto_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-23 22:45:37 UTC</createdTime>
+<ownerDesignName>MODELO DB RESTAURANTE</ownerDesignName>
+<referredTableLongName>Producto</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>93D069EF-9294-A29F-EDD4-F1C37CE26EE4</referredTableID>
+<keyObject>9A818038-BC0A-9100-766B-12A894EA16AC</keyObject>
+<referredKeyID>9A818038-BC0A-9100-766B-12A894EA16AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idProducto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

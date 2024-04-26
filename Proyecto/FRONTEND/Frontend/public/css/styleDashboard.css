@@ -1,0 +1,63 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(220, 20, 60, 0.6) !important;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    margin: 0;
+}
+
+.navbar-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    height: calc(100vh - 60px); /* Ajustar altura de la barra de navegación */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Botones */
+.btn-dashboard {
+    background-color: #ff6347;
+    margin-right: 10px;
+}
+
+/* Modal */
+.modal-header {
+    background-color: #ff6347;
+    color: white;
+}

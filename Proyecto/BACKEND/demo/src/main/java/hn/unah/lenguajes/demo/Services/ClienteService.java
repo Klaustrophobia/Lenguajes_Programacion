@@ -8,4 +8,5 @@ public interface ClienteService {
 
     public Cliente autenticarCliente(String correo, String contrasenia); // PARA REGISTRAR EL CLIENTE DEL
 
+    public Cliente buscarClienteCorreo(String correo);
 }

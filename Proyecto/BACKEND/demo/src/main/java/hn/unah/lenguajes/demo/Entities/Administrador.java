@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "administradores")
+@Table(name = "administrador")
 @Data
 
 public class Administrador {

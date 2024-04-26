@@ -30,4 +30,12 @@ public class ClienteServiceImpl implements ClienteService{
         }
     }
 
+    @Override
+    public Cliente buscarClienteCorreo(String correo) {
+        Cliente cliente = this.clienteRepository.findByCorreo(correo);
+        return cliente;
+    }
+
+    
+
 }
